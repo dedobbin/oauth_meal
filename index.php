@@ -30,6 +30,8 @@ $githubClientSecret=env('client_secret');
 
 session_start();
 
+//todo: functions etc to make upcoming mess more readable
+
 if (isset($_GET['code'])){
 	//Return from github after authentication
 	if (!$_GET['state'] == $_SESSION['state']){
